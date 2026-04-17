@@ -1,0 +1,15 @@
+:root {
+  /* Neumorphism Shadows */
+  --shadow-neomorph-light: -2px -2px 4px 0px var(--color-neomorph-light),
+                           4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-neomorph-btn: -3px -4px 4px 0px var(--color-neomorph-light),
+                         3px 2px 4px 0px var(--color-neomorph-shadow);
+  --shadow-neomorph-inset: inset -6px -5px 8px 0px var(--color-neomorph-light),
+                           inset 3px 4px 4px 0px var(--color-neomorph-shadow);
+
+  /* Standard Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}

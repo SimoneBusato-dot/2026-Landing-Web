@@ -1,0 +1,59 @@
+:root {
+  /* Light Mode (Default) */
+  --color-bg-primary: #EEEEEE;
+  --color-bg-secondary: #FAFAFA;
+
+  /* Text/Content Colors */
+  --color-text-primary: #2c2c2c;
+  --color-text-secondary: #444;
+
+  /* Interactive Colors */
+  --color-link-hover: rgb(55, 108, 219);
+  --color-link-default: rgb(55, 108, 219);
+
+  /* Button Colors */
+  --color-btn-primary-bg: rgb(55, 108, 219);
+  --color-btn-primary-text: #eee;
+  --color-btn-secondary-bg: #eee;
+  --color-btn-secondary-text: #2c2c2c;
+  --color-btn-hover-bg: #D5D5D5;
+
+  /* Neumorphism Shadows */
+  --color-neomorph-light: #fafafa;
+  --color-neomorph-shadow: #8b8b8b;
+
+  /* Gradient Colors (for hero section) */
+  --color-gradient-primary-start: rgb(55, 108, 219);
+  --color-gradient-primary-end: rgb(120, 174, 255);
+}
+
+
+
+/* Alternative: Dark class for manual control */
+:root.dark {
+  /* Dark Mode Background Colors */
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d2d2d;
+
+  /* Dark Mode Text/Content Colors */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #b8b8b8;
+
+  /* Dark Mode Interactive Colors */
+  --color-link-hover: rgb(100, 150, 255);
+  --color-link-default: rgb(100, 150, 255);
+
+  /* Dark Mode Button Colors */
+  --color-btn-primary-bg: rgb(55, 108, 219);
+  --color-btn-primary-text: #f5f5f5;
+  --color-btn-secondary-bg: #2d2d2d;
+  --color-btn-secondary-text: #f5f5f5;
+
+  /* Dark Mode Neumorphism Shadows */
+  --color-neomorph-light: #3a3a3a;
+  --color-neomorph-shadow: #0a0a0a;
+
+  /* Dark Mode Gradient Colors */
+  --color-gradient-primary-start: rgb(100, 150, 255);
+  --color-gradient-primary-end: rgb(55, 108, 219);
+}

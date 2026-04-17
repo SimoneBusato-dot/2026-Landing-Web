@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-inter);
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-secondary);
+  border-radius: var(--radius-s);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-primary);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-link-hover);
+  color: var(--color-btn-primary-text);
+}
+
+::-moz-selection {
+  background-color: var(--color-link-hover);
+  color: var(--color-btn-primary-text);
+}
