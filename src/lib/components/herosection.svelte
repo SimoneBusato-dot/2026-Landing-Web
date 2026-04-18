@@ -5,6 +5,9 @@
 </script>
 
 <div id="hero">
+    <img id="light-img"src="/image-hero.png" alt="Embedded Data">
+    <img id="dark-img" src="/image-hero-dark.png" alt="Embedded Data">
+
     <div id="title-cta">
         <div id="title">
            <h1>Embedded Data</h1>
@@ -15,9 +18,7 @@
             <Buttons variant="secondary">About Us</Buttons>
         </div>
     </div>
-    <img id="light-img"src="/image-hero.png" alt="Embedded Data">
-    <img id="dark-img" src="/image-hero-dark.png" alt="Embedded Data">
-
+    
 
 </div>
 
@@ -103,6 +104,62 @@
         }
         #light-img {
             display: none;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        #hero {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            height: fit-content;
+            gap: var(--spacing-40);
+            width: 100vw;
+        }
+
+        #title-cta {
+            gap: var(--spacing-24);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #title h1 {
+            font-size: 64px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #title p {
+            font-size: 20px;
+            width: 617px;
+        }
+
+ 
+
+        #hero img {
+            position: relative;
+            width: 640px;
+            
+        }
+    }
+
+    @media (max-width: 600px){
+
+        #title h1 {
+            font-size: 40px;
+        }
+        #title p {
+            width: 100%;
+            font-size: var(--text-base);
+        }
+
+        #hero img {
+            width: 100%;
         }
     }
 </style>

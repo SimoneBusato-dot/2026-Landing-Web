@@ -62,4 +62,17 @@
         display: flex;
         gap: var(--spacing-16);
     }
+
+    @media (max-width: 768px) {
+        #nav-container {
+            width: 100vw;
+            padding: var(--spacing-40);
+        }
+            nav {
+                width: 664px;
+                padding: 10px var(--spacing-24);
+            }
+
+      
+    }
 </style>

@@ -70,4 +70,18 @@
         box-shadow: inset -3px -4px 4px 0px var(--color-btn-hover-bg),
         inset 3px 2px 4px 0px var(--color-btn-hover-bg);
     }
+
+    @media (max-width: 646px){
+        .btn {
+            font-size: 20px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: var(--radius-s) var(--spacing-16);
+        }
+
+        .btn-primary svg {
+            display: none;
+        }
+    }
 </style>
