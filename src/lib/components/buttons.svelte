@@ -33,7 +33,7 @@
     .btn-primary {
         background-color: var(--color-btn-primary-bg);
         color: var(--color-btn-primary-text);
-        padding: var(--radius-s) var(--spacing-24);
+        padding: var(--radius-s) var(--spacing-32);
         box-shadow: -3px -4px 4px 0px var(--color-neomorph-light),
         3px 2px 4px 0px var(--color-neomorph-shadow);
         position: relative;

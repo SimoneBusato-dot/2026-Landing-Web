@@ -30,7 +30,7 @@
         justify-content: flex-start;
         width: 90vw;
         background-color: var(--color-bg-primary);
-        height: 100vh;
+        height: 90vh;
         padding: 40px 80px 40px 80px;
         overflow: hidden;
         

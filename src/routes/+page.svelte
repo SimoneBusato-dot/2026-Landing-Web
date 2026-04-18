@@ -1,7 +1,7 @@
 <script>
+    import NavBar from "$lib/components/navbar.svelte";
     import Herosection from "$lib/components/herosection.svelte";
-    import Link from "$lib/components/link.svelte";
 </script>
 
-  
+<NavBar />
 <Herosection />
