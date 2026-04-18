@@ -28,7 +28,37 @@
 }
 
 
+@media (prefers-color-scheme: dark){
+  :root{
+  /* Dark Mode Background Colors */
 
+  --color-bg-primary: #2C2C2C;
+  --color-bg-secondary: #444444;
+
+  /* Dark Mode Text/Content Colors */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #b8b8b8;
+
+  /* Dark Mode Interactive Colors */
+  --color-link-hover: rgb(100, 150, 255);
+  --color-link-default: rgb(100, 150, 255);
+
+  /* Dark Mode Button Colors */
+  --color-btn-primary-bg: rgb(55, 108, 219);
+  --color-btn-primary-text: #f5f5f5;
+  --color-btn-secondary-bg: #2d2d2d;
+  --color-btn-secondary-text: #f5f5f5;
+  --color-btn-hover-bg: #5F5F5F;
+
+  /* Dark Mode Neumorphism Shadows */
+  --color-neomorph-light: #3a3a3a;
+  --color-neomorph-shadow: #0a0a0a;
+
+  /* Dark Mode Gradient Colors */
+  --color-gradient-primary-start: rgb(55, 108, 219);
+  --color-gradient-primary-end: rgb(120, 174, 255);
+  }
+}
 /* Alternative: Dark class for manual control */
 :root.dark {
   /* Dark Mode Background Colors */
