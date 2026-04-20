@@ -47,4 +47,14 @@
         width: fit-content;
         height: fit-content;
     }
+
+    @media(max-width: 600px){
+        .link{
+            display: flex;
+            width: 330px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+    }
 </style>

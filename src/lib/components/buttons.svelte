@@ -5,7 +5,9 @@
 {#if variant === 'primary'}
 <button class={`btn btn-${variant}`}>
 {@render children?.()}
-    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M127.33-240 80-287.33l293.33-293.34L538-416l230-229.33H648.67V-712H880v231.33h-66v-116.66L537.33-320.67 372.67-485.33 127.33-240Z"/></svg>
+<svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.5007 1.5L16.7314 10.4062C16.574 10.5662 16.4943 10.6464 16.4238 10.7095C15.2848 11.729 13.5624 11.729 12.4233 10.7095C12.3528 10.6464 12.2726 10.5663 12.115 10.4062C11.9574 10.2462 11.8786 10.1661 11.8081 10.103C10.6691 9.08352 8.94595 9.08352 7.80691 10.103C7.73656 10.166 7.65798 10.2458 7.50117 10.4051L1.5 16.5M25.5007 1.5L25.5 10.5M25.5007 1.5H16.5" stroke="#EEEEEE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
     
 </button>
 {:else}
@@ -28,6 +30,7 @@
         cursor: pointer;
         border: none;
         transition: all 0.2s ease;
+        gap: 8px;
     }
     
     .btn-primary {
