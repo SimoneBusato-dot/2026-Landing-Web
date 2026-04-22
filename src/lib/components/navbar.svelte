@@ -57,7 +57,7 @@
         width: 100%;
         height: fit-content;
         position: sticky;
-        top: 7%;
+        top: 6%;
         z-index: 100;
     }
 
@@ -149,7 +149,7 @@ svg path{
         #nav-container {
         top: auto; 
         position: fixed; 
-        bottom: 2%;
+        bottom: 5%;
         width: 100%;
         left: 0;
         padding: 0; 

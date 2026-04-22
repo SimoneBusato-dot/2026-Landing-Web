@@ -29,6 +29,7 @@
     .link-default:hover {
         box-shadow: inset -3px -4px 4px 0px var(--color-neomorph-light),
         inset 3px 2px 4px 0px var(--color-neomorph-shadow);
+        cursor: pointer;
     }
 
     .link-active {
