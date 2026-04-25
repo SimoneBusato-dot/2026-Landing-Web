@@ -1,7 +1,29 @@
 
 
 <script>
+    import { on } from "svelte/events";
     import Buttons from "./buttons.svelte";
+    import { onMount } from "svelte";
+
+    
+    
+    onMount(() => {
+        const animatedElements = document.querySelectorAll('img, #title-cta');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } 
+            });
+        }, { threshold: 0.1 });
+    
+        animatedElements.forEach(el => observer.observe(el));
+    
+        return () => {
+            animatedElements.forEach(el => observer.unobserve(el));
+        };
+    });
+    
 </script>
 
 <div id="hero">
@@ -33,7 +55,8 @@
         background-color: var(--color-bg-primary);
         height: 90vh;
         padding: 40px 80px 40px 80px;
-        overflow: hidden;
+        max-width: 1512px;
+        position: relative;
         
          
     }
@@ -43,6 +66,14 @@
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-48);
+        transform: translateY(10%);
+        transition: opacity 1.5s ease-in-out 0.8s, transform 1.5s ease-in-out 0.8s;
+        opacity: 0;
+    }
+
+    #title-cta:global(.show) {
+        transform: translateY(0);
+        opacity: 1;
         
     }
     
@@ -83,14 +114,24 @@
         gap: var(--spacing-24);
     }
 
-    #hero img {
+    img {
         width: 666px;
         height: auto;
         object-fit: contain;
         position: absolute;
-        right: 0;
+        right: -10%;
+        scale: 0.9;
+        transition: opacity 1.5s ease-in-out 0.8s, scale 1.5s ease-in-out 0.8s;
+        opacity: 0;
         
     }
+
+    img:global(.show){
+        opacity: 1;
+        scale: 1;
+    }
+   
+
     #light-img {
         display: block;
     }

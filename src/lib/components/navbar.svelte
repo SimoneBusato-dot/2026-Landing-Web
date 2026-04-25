@@ -59,6 +59,7 @@
         position: sticky;
         top: 6%;
         z-index: 100;
+        
     }
 
     nav {
@@ -70,6 +71,7 @@
         background-color: var(--color-bg-primary);;
         border-radius: var(--radius-full);
         box-shadow: -6px -5px 4px 0px var(--color-neomorph-light), 3px 4px 4px 0px var(--color-neomorph-shadow);
+        
         
         
         
@@ -177,19 +179,19 @@ svg path{
         border-radius: var(--radius-lg);
         z-index: -1;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(50%);
         bottom: 40px; 
         opacity: 0;
-        height: 0;
+        height: fit-content;
         pointer-events: none;
-        transition: all 0.2s ease;
+        transition: opacity 0.2s ease, transform 0.2s ease;
        
     }
  
     #link-container.open {
         opacity: 1;
         pointer-events: all;
-        height: fit-content;
+        transform: translateX(-50%) translateY(0);
         padding: var(--spacing-32);
     }
 

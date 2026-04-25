@@ -6,9 +6,8 @@
 
     onMount(async () => {
         const svg = d3.select(svgElement);
-        const box = svgElement.getBoundingClientRect();
-        const width = box.width;
-        const height = box.height;
+        const width = 710;
+        const height = 311;
         const margin = {top: 10, right: 10, bottom: 10, left: 10};
         const innerWidth = width - margin.right - margin.left;
         const innerHeight = height - margin.top - margin.bottom;
@@ -39,7 +38,7 @@
     })
 </script>
 
-<svg bind:this={svgElement} width="600" height="311">
+<svg bind:this={svgElement} width="710" height="311">
     <defs>
         <linearGradient id="Bar-Gradient" x1="270" y1="20" x2="270" y2="236" gradientUnits="userSpaceOnUse">
         <stop stop-color="#78AEFF"/>
@@ -49,9 +48,12 @@
 </svg>
 
 <style>
+    svg {
+    overflow: visible;
+}
     :global(rect){
         fill: url(#Bar-Gradient);
-        filter: drop-shadow(-3px -4px 2px var(--color-neomorph-light)) drop-shadow(3px 2px 2px var(--color-neomorph-shadow));
+        filter: drop-shadow(-3px -4px 4px var(--color-neomorph-light)) drop-shadow(3px 2px 4px var(--color-neomorph-shadow));
 
     }
 </style>

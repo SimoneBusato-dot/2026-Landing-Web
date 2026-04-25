@@ -1,5 +1,25 @@
 <script>
     import Cards from "./cards.svelte";
+    import { onMount } from "svelte";
+
+    
+    
+    onMount(() => {
+        const animatedElements = document.querySelectorAll('#img, #text');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        animatedElements.forEach(el => observer.observe(el));
+    
+        return () => {
+            animatedElements.forEach(el => observer.unobserve(el));
+        };
+    });
 </script>
 
 <div id="section2">
@@ -67,12 +87,25 @@
         gap: var(--spacing-16);
         width: 540px;
         height: fit-content;
-        
-
+        transform: translateY(20%);
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out 0.2s, transform 1.5s ease-in-out 0.2s;
     }
 
+    #text:global(.show){
+        transform: translateY(0);
+        opacity: 1;
+    }
     #img{
         position: relative;
+        transform: translateX(-5%);
+        transition: opacity 1.5s ease-in-out 1s, transform 1.5s ease-in-out 1s;
+        opacity: 0;
+    }
+
+    #img:global(.show){
+        transform: translateX(0);
+        opacity: 1;
     }
 
     #svgContainer{
@@ -82,6 +115,10 @@
         box-shadow: -3px 4px 4px 0px var(--color-neomorph-shadow);
         padding: 24px;
         border-radius: 12px;
+    }
+
+    #text p{
+        color: var(--color-text-secondary);
     }
 
 
