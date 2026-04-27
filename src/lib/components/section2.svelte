@@ -63,6 +63,8 @@
         background-color: var(--color-bg-primary);
         gap: 15px;
         height: 100vh;
+        max-width: 1512px;
+        position: relative;
     }
 
     #cardContainer{
