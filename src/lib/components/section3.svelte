@@ -128,7 +128,7 @@
         }
 
         #img:global(.show){
-            transform: translateY(0);
+            transform: translateY(-10%);
         }
 
     

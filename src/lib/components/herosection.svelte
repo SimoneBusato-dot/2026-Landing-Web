@@ -185,6 +185,7 @@
         #hero img {
             position: relative;
             width: 640px;
+            right: 0;
             
         }
     }
