@@ -142,6 +142,11 @@
 
         #img{
             scale: 0.6;
+            transform: translateY(10%);
+        }
+        
+         #img:global(.show){
+            transform: translateY(-10%);
         }
 
         #text p{
