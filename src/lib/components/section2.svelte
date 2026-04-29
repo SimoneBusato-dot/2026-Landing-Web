@@ -161,7 +161,7 @@
         }
 
         #img:global(.show){
-            transform: translateX(0);
+            transform: translateX(0%);
             opacity: 1;
         }
 
@@ -174,7 +174,7 @@
                 gap: 40px;
             }
             #cardContainer{
-                transform: translateX(10%) perspective(1000px) rotateY(40deg);
+                
                 scale: 0.6;
             }
 
