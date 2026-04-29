@@ -153,6 +153,18 @@
             color: var(--color-text-secondary);
         }
 
+        #img{
+        position: relative;
+        transform: translateX(-5%);
+        transition: opacity 1.5s ease-in-out 1s, transform 1.5s ease-in-out 1s;
+        opacity: 0;
+        }
+
+        #img:global(.show){
+            transform: translateX(0);
+            opacity: 1;
+        }
+
     }
 
     @media (max-width: 600px){
